@@ -80,3 +80,60 @@ nav ul{
     height: 200px;
     border: 5px solid violet;
 }
+
+@media(max-width: 970px){
+    .main-container {
+        margin-right: 0;
+        margin-left:0;
+    }
+}
+
+@media(max-width: 890px){
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+    }
+    .second-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .second-container div{
+        flex: 50%;
+    }
+
+    nav{
+        padding-right: 70px;
+    }
+
+    nav ul{
+        width: 300px;
+    }
+}
+
+@media(max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding-right: 25%;
+    }
+    nav div.name{
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    nav ul{
+        
+    }
+}
+
+@media(max-width: 420px){
+    .second-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+}
