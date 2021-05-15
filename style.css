@@ -81,6 +81,105 @@ nav ul{
     border: 5px solid violet;
 }
 
+
+.tc1{
+    grid-area: tc1;
+    border:5px solid violet;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 40px;
+   
+}
+
+.tc1 img{
+    margin-left: 10px;
+}
+
+.tc1 p{
+    margin-left: 10px;
+}
+
+.tc1 h1{
+    background: blue;
+    text-align: center;
+    color: white;
+    margin-top: -20px ;
+    margin-left: 20px;
+    width: 50%;
+    position: relative;
+    
+}
+
+.tc2 h1{
+    background: blue;
+    text-align: center;
+    color: white;
+    margin-top: -20px ;
+    margin-left: 20px;
+    width: 50%;
+    position: relative;
+    
+}
+
+
+
+
+
+.tc2{
+    grid-area: tc2;
+    border:5px solid violet;
+    margin-left:20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.tc2 h1{
+    background: blue;
+    text-align: center;
+    color: white;
+}
+
+.tc2 p{
+    margin: 10px;
+}
+
+.tc3{
+    grid-area: tc3;
+    border:5px solid violet;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.tc1pic{
+    width: 30%;
+    height: 18%;
+}
+
+
+
+.third-container{
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: 350px 350px;
+
+    grid-template-areas:
+    "tc1 tc2"
+    "tc1 tc3"
+    
+}
+
+
+
+
+
+
+
+
 @media(max-width: 970px){
     .main-container {
         margin-right: 0;
@@ -133,6 +232,31 @@ nav ul{
     .second-container{
         display: flex;
         flex-direction: column;
+    }
+
+    .third-container{
+        display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: 400px 400px;
+
+    grid-template-areas:
+    "tc1 tc1"
+    "tc2 tc2"
+    "tc3 tc3"
+    }
+
+    .tc1{
+        margin:10px;
+        margin-top: 50px;
+    }
+
+    .tc2{
+        margin:10px;
+    }
+
+    .tc3{
+        margin:10px;
     }
 
    
