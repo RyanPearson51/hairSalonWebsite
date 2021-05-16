@@ -65,10 +65,14 @@
     color: white;
     margin-top: -20px ;
     margin-left: 20px;
-    width: 50%;
+    width: 55%;
     position: relative;
     
 }
+
+
+
+
 
 .tc2 h1{
     background: blue;
@@ -90,7 +94,7 @@
     border:5px solid violet;
     margin-left:20px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -113,16 +117,37 @@
     border:5px solid violet;
     margin-left: 20px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 100px;
     background-color: blueviolet;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .tc1pic{
     width: 30%;
     height: 18%;
+    float: left;
 }
 
+.tc1 h2{
+    float: right;
+    margin-right: 10%;
+}
+
+.tc1 p{
+    float: left;
+}
+
+.tc3pic{
+    width:45%;
+    height:100%;
+}
+
+.tc3 h3{
+    margin-left: 5px;
+}
 
 
 .third-container{
@@ -166,8 +191,23 @@
     .second-container div{
         flex: 50%;
     }
+    .tc1 h2{
+        margin-right: 0%;
+    }
 
 }
+
+@media(max-width: 850px){
+    .third-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .tc1 h2{
+        margin-right: 12%;
+    }
+
+}
+
 
 
 
@@ -181,7 +221,7 @@
         display: grid;
 
     grid-template-columns: auto auto;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 700px 300px 400px;
 
     grid-template-areas:
     "tc1 tc1"
@@ -196,11 +236,15 @@
 
     .tc2{
         margin:10px;
+        margin-top: 40px;
     }
 
     .tc3{
         margin:10px;
     }
 
+    
    
 }
+
+
