@@ -12,7 +12,7 @@ nav {
 
 nav div.name {
     border: 1px solid blue;
-    background: blue;
+    background: darkblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,4 +34,34 @@ nav ul{
     justify-content: space-between;
     width: 400px;
     
+}
+
+
+
+
+
+@media(max-width: 890px){
+    nav{
+        padding-right: 70px;
+    }
+
+    nav ul{
+        width: 300px;
+    }
+}
+
+@media(max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding-right: 25%;
+    }
+    nav div.name{
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    nav ul{
+        
+    }
 }

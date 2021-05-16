@@ -4,46 +4,6 @@
     padding: 25px;
 }
 
-
-nav {
-    border: 1px solid red;
-    background-color: violet;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 140px;
-    margin-top: 50px;
-    height: 100px;
-    position: relative;
-  }
-
-nav div.name {
-    border: 1px solid blue;
-    background: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: absolute;
-    height: 95px;
-    font-size: 20px;;
-    top:20px;
-    left:5%;
-    padding: 15px;
-  }
-
-nav ul{
-    list-style-type: none;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 400px;
-    
-}
-
-
 .main-container{
     border: 2px solid violet;
     height: 100%;
@@ -100,7 +60,7 @@ nav ul{
 }
 
 .tc1 h1{
-    background: blue;
+    background: darkblue;
     text-align: center;
     color: white;
     margin-top: -20px ;
@@ -134,10 +94,12 @@ nav ul{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    background-color: blueviolet;
+    color: white;
 }
 
 .tc2 h1{
-    background: blue;
+    background: darkblue;
     text-align: center;
     color: white;
 }
@@ -152,6 +114,8 @@ nav ul{
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 10px;
+    background-color: blueviolet;
+    color: white;
 }
 
 .tc1pic{
@@ -203,30 +167,9 @@ nav ul{
         flex: 50%;
     }
 
-    nav{
-        padding-right: 70px;
-    }
-
-    nav ul{
-        width: 300px;
-    }
 }
 
-@media(max-width: 600px){
-    nav{
-        display: flex;
-        flex-direction: column;
-        padding-right: 25%;
-    }
-    nav div.name{
-        position: relative;
-        margin-bottom: 35px;
-    }
 
-    nav ul{
-        
-    }
-}
 
 @media(max-width: 420px){
     .second-container{
